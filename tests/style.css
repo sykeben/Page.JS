@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #eeeeee;
+}
+
+.title {
+    margin-top: 0px;
+    margin: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    color: #222222;
+}
+
+.pagejs-canvas {
+    margin-top: 5px;
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    border-width: 1px;
+    border-color:#dddddd;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
