@@ -6,4 +6,4 @@ pagejs.basics = {
         rem: function(id) { pagejs.element.remove(id); }
     }
 
-}
+};

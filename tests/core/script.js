@@ -6,7 +6,7 @@ pagejs.element.addBasic("test-id", "strong", "Hello, World!", [["style","color:b
 
 // Make a bunch of random numbers.
 for (var i=0; i<10; i++) {
-    pagejs.basics.break.add(`number-break-${i.toString()}`)
+    pagejs.basics.break.add(`number-break-${i.toString()}`);
     pagejs.element.addBasic(`number-${i.toString()}`, "span", `[${i}] ${Math.random().toString()}`);
 }
 
