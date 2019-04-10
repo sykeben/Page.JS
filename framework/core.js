@@ -49,6 +49,11 @@ var pagejs = {
         // Remover.
         remove: function(id) {
             document.getElementById(id).remove;
+            for (i; i<pagejs.itemList.length; i++) {
+                if (pagejs.itemList[i] == id) {
+                    pagejs.itemList.splice(i, 1);
+                }
+            };
         }
 
     }
