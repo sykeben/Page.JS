@@ -1,5 +1,8 @@
 var pagejs = {
 
+    // List of item IDs.
+    itemList: [],
+
     // Canvas-related.
     canvas: {
 
@@ -18,7 +21,7 @@ var pagejs = {
 
     },
 
-    // Raw code adder.
+    // Raw code adder (USE THIS SPARINGLY, ITEMS ARE NOT ADDED TO THE LIST THIS WAY).
     addCode: function(code) {
         document.getElementById(pagejs.canvas.id).innerHTML += code;
     },
@@ -40,6 +43,12 @@ var pagejs = {
         // Basic adder.
         addBasic: function(id, tag, content, attribs) {
             pagejs.addCode(pagejs.element.construct(id, tag, content, attribs));
+            pagejs.itemList.push(id);
+        },
+
+        // Remover.
+        remove: function(id) {
+            document.getElementById(id).remove;
         }
 
     }

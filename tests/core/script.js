@@ -6,9 +6,12 @@ pagejs.element.addBasic("test-id", "strong", "Hello, World!", [["style","color:b
 
 // Make a bunch of random numbers.
 for (var i=0; i<10; i++) {
-    pagejs.addCode("<br>");
-    pagejs.element.addBasic(`number-${i.toString()}`, "span", Math.random().toString());
+    pagejs.basics.break.add(`number-break-${i.toString()}`)
+    pagejs.element.addBasic(`number-${i.toString()}`, "span", `[${i}] ${Math.random().toString()}`);
 }
 
 // Style up the canvas.
 pagejs.canvas.addAttrib("style", "padding: 15px");
+
+// Log the element list.
+console.log("ELEMENT LIST: " + pagejs.itemList.toString());
